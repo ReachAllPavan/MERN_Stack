@@ -10,7 +10,7 @@ const Posts = () => {
     const[status,setStatus]=useState();
     const handleSubmit =(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:8000/create",{name,task,email,doubt,status})
+        axios.post("https://mern-stack-seven-gray.vercel.app/create",{name,task,email,doubt,status})
         .then(result=>{
             if(result.status===200){
                 console.log('user created');
